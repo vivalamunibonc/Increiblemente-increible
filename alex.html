@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style/cuentas.css"
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex</title>
+</head>
+<body>
+    
+    <img src="Images/alex.jpeg">
+
+    <h1>Alex Eduardo Tobar Recinos</h1>
+
+    <p>El es Alex, el mente del grado... o al menos antes que se fuera para Estados Unidos a besarle la papada a Donald Trump. jjaja</p>
+    <p>Si te preguntas por qué el está a parte, simplemente los desarrolladores quisimos meter un EasterEgg (uno de varios), y... obviamente para recalcarle que según nuestras fuentes el debe una cena a sus amigos (juela).</p>
+    <br>
+    
+    
+    <p>Sexo: Masculino</p>
+    <p>Es bueno jugando Minecraft, estar todo el día en su pc, viendo mujeres que no existen y que solo son dibujos con pelo rosa, ahh! y en matemáticas.</p>
+    <p>Estado: Soltero (creemos)</p>
+    <p>Eso es todo, solo recalcar de nuevo que tiene una cena pendiente...</p>
+
+
+
+    <br><br>
+
+    <button onclick="window.location.href='perfiles.html'">Volver</button>
+
+
+<! Boton de la musica -->
+
+<audio id="musica" src="Audio/alexmusica.mp3"></audio>
+<button id="botonMusica" onclick="reproducirMusica()">
+    <img id="iconoMusica" src="Images/Play.png" alt="Reproducir">
+</button>
+
+<script>
+    function reproducirMusica() { 
+        const musica = document.getElementById("musica");
+        const icono = document.getElementById("iconoMusica");
+
+        if (musica.paused) {
+            musica.play();
+            icono.src = "Images/Pausa.png";
+         } else {
+            musica.pause();
+            icono.src = "Images/Play.png";
+          }
+    }
+</script>
+    
+<br>
+</body>
+</html>

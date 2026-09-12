@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="style/perfiles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfiles</title>
+</head>
+<body>
+    
+    <h1>Perfiles</h1>
+
+    <p>Aquí encontrarás todos los perfiles disponibles</p>
+
+    <br><br>
+
+    <!-- Contenedor principal para organizar las tarjetas en fila xd-->
+    <div class="contenedor-perfiles">
+
+        <div class="perfil">
+            <h3>Bladimir Enrique</h3>
+            <img src="Images/bladimir.jpeg" class="bladimir" alt="bladi">
+            <br><button onclick="window.location.href='bladimir.html'">Ver Análisis</button>
+        </div>
+
+        <div class="perfil">
+            <h3>Kevin Alexander</h3>
+            <img src="Images/kevin.jpeg" class="kevin" alt="kevvn">
+            <br><button onclick="window.location.href='kevin.html'">Ver Análisis</button>
+        </div>
+
+        <div class="perfil">
+            <h3>Allan Avelar</h3>
+            <img src="Images/allan.jpeg" class="allan" alt="allan">
+            <br><button onclick="window.location.href='allan.html'">Ver Análisis</button>
+        </div>
+
+        <div class="perfil">
+            <h3>Diego Maldonado</h3>
+            <img src="Images/diego.jpeg" class="diego" alt="diego">
+            <br><button onclick="window.location.href='diego.html'">Ver Análisis</button>
+        </div>
+
+        <div class="perfil">
+            <h3>Amilcar Stanley</h3>
+            <img src="Images/amilcar.jpeg" class="amilcar" alt="amilcar">
+            <br><button onclick="window.location.href='amilcar.html'">Ver Análisis</button>
+        </div>
+
+        <div class="perfil">
+            <h3>Christopher Ricardo</h3>
+            <img src="Images/chris.jpeg" class="chris" alt="chris">
+            <br><button onclick="window.location.href='chris.html'">Ver Análisis</button>
+        </div>
+
+        <div class="perfil">
+            <h3>Lester Raúl</h3>
+            <img src="Images/lester.jpeg" class="lester" alt="lester">
+            <br><button onclick="window.location.href='lester.html'">Ver Análisis</button>
+        </div>
+
+        <div class="perfil">
+            <h3>José Isandro</h3>
+            <img src="Images/aleman.jpeg" class="isandro" alt="isandro">
+            <br><button onclick="window.location.href='isandro.html'">Ver Análisis</button>
+        </div>
+
+        <div class="perfil">
+            <h3>Diego Josúe</h3>
+            <img src="Images/diegoc.jpeg" class="diego" alt="diego">
+            <br><button onclick="window.location.href='diegoc.html'">Ver Análisis</button>
+        </div>
+
+        <div class="perfil">
+            <h3>Jordin Jamilk</h3>
+            <img src="Images/jordi.jpeg" class="jordi" alt="jordi">
+            <br><button onclick="window.location.href='jordi.html'">Ver Análisis</button>
+        </div>
+
+    </div>
+
+    <br><br><br><br><br><button class="volverindex" onclick="window.location.href='index.html'">Volver</button>
+
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <button class="Botonvira" onclick="activarSensor()">Activar</button>
+
+<script>
+function activarSensor() {
+    if (typeof DeviceMotionEvent.requestPermission === "function") {
+        DeviceMotionEvent.requestPermission()
+            .then(permission => {
+                if (permission === "granted") {
+                    iniciarDetector();
+                }
+            });
+    } else {
+        iniciarDetector();
+    }
+}
+
+function iniciarDetector() {
+    window.addEventListener("devicemotion", detectarMovimiento);
+}
+
+function detectarMovimiento(event) {
+    const aceleracion = event.accelerationIncludingGravity;
+
+    const fuerza = Math.abs(aceleracion.x) +
+                   Math.abs(aceleracion.y) +
+                   Math.abs(aceleracion.z);
+
+    if (fuerza > 35) {
+        window.location.href = "alex.html";
+    }
+}
+</script>
+
+
+
+<br><br><br><br><br>
+
+
+</body>
+</html>

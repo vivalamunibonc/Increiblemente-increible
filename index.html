@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="style/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Increíblemente increíble</title>
+</head>
+<body style="background-color: #1a1a1a; color: skyblue; text-align: center;">
+  
+    <h1>Increíblemente increíble</h1>
+
+  <p style="color: whitesmoke;">
+   Bienvenido a la página oficial de la gente más "increíble" de Nueva Concepción. Si llegaste hasta acá por casualidad, te sugerimos proceder con precaución. En este sitio no vas a encontrar nada productivo, pero sí vas a conocer a detalle las vidas, gustos, y antecedentes de los miembros de este grupo.
+  </p>
+  <img src="Images/increible.jpg" alt="" class="imagenincr">
+  <p style="color: whitesmoke;">
+ Dicen que en Nueva Concepción hay lugares icónicos, pero ninguno se compara con este grupo de personajes. Hemos creado este sitio web no porque la sociedad lo necesitara, sino porque el mundo merece conocer a las mentes brillantes (y no tan brillantes) que componen este equipo. Selecciona a cualquiera de los integrantes en las pestañas para descubrir de qué están hechos.
+  </p>
+  <img src="Images/a.jpg" alt="" class="imagenincr2">
+
+  <br><br>
+
+  <button onclick="window.location.href='perfiles.html'">
+    Ir a perfiles
+</button>
+<br><br>
+<button onclick="window.location.href='creditos.html'">
+    Créditos
+</button>
+
+
+
+<br><br><br><br>
+
+<audio id="musica" src="Audio/gemidos-250.mp3"></audio>
+<button id="botonMusica" onclick="reproducirMusica()">
+    <img id="iconoMusica" src="Images/botonnopresionado.png">
+</button>
+
+<script>
+    function reproducirMusica() { 
+        const musica = document.getElementById("musica");
+        const icono = document.getElementById("iconoMusica");
+
+        if (musica.paused) {
+            musica.play();
+            icono.src = "Images/botonpresionado.png";
+         } else {
+            musica.pause();
+            icono.src = "Images/botonnopresionado.png";
+          }
+    }
+</script>
+
+</body>
+</html>

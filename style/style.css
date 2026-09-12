@@ -1,0 +1,50 @@
+button{
+
+    cursor:pointer;
+    background-color: #001b96;
+    color: rgb(255, 255, 255);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 8px 12px rgba(0, 123, 255, 0.15);
+  transition: all 0.2s ease-in-out;
+    border-radius: 5px;
+    font-size: 30px;
+  font-weight: 500;
+}
+
+#botonMusica {
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+  cursor: pointer;
+  
+}
+
+#iconoMusica {
+  display: block;
+  width: 200px;
+}
+
+h1{
+  font-size: 50px;
+  text-shadow: #87ceeb 0 15px 50px;
+}
+
+p{
+  font-size: 20px;
+  text-align: left;
+}
+
+
+.imagenincr {
+  width: 600px;
+  max-width: 100%;
+  height: auto;
+}
+
+
+.imagenincr2 {
+  width: 400px;
+  max-width: 100%;
+  height: auto;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="style/cuentas.css"
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isandro</title>
+</head>
+<body>
+    
+<h1>Isandro</h1>
+
+<img src="Images/aleman.jpeg">
+
+<p>Nombre: José Isandro Clavel Alemán</p>
+<p>Sexo: Masculino</p>
+<p>Es bueno para... ¿dormir?</p>
+<p>Fecha de nacimiento: 08/10/2009</p>
+<p>Estado: Soltero</p>
+<p>Isandro es una persona un poquito reservada, de intereses variados y con cierta inclinación hacia la tecnología, el diseño y la creación de proyectos sin sentidos.
+</p>
+
+<img src="Images/esqueleto-bailando-esqueleto.gif">
+
+<br><br>
+
+
+
+<div class="botones">
+
+<button onclick="window.location.href='perfiles.html'">Volver</button>
+
+
+<! Boton de la musica -->
+
+<audio id="musica" src="Audio/isandro1.mp3"></audio>
+<button id="botonMusica" onclick="reproducirMusica()">
+    <img id="iconoMusica" src="Images/Play.png" alt="Reproducir">
+</button>
+
+<script>
+    function reproducirMusica() { 
+        const musica = document.getElementById("musica");
+        const icono = document.getElementById("iconoMusica");
+
+        if (musica.paused) {
+            musica.play();
+            icono.src = "Images/Pausa.png";
+         } else {
+            musica.pause();
+            icono.src = "Images/Play.png";
+          }
+    }
+</script>
+    
+<br><br><br><br>
+    
+
+
+
+
+
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="style/cuentas.css"
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diego C</title>
+</head>
+<body>
+    
+<h1>Diego C</h1>
+
+<img src="Images/diegoc.jpeg">
+
+<p>Nombre: Diego Josué Cruz Rivas</p>
+<p>Sexo: Masculino</p>
+<p>Es bueno ejecutando su instrumento (trombón)</p>
+<p>Fecha de nacimiento: 15/04/2009</p>
+<p>Estado: En una relación</p>
+<p>Diego Cruz es una persona divertida, que se considera "bueno" en CyT, le gusta andar en bicicleta, aveces se le sube el poder a la cabeza (es el presidente de 2GB) pero al menos no lo derrocaron como a el presidente de otra sección (Allan); le gusta tocar el trombón y sale más con la novia que con los amigos.</p>
+
+<img src="Images/esqueleto-bailando-esqueleto.gif">
+
+<br><br>
+
+
+
+<div class="botones">
+
+<button onclick="window.location.href='perfiles.html'">Volver</button>
+
+
+<! Boton de la musica -->
+
+<audio id="musica" src="Audio/diegocruzmusica.mp3"></audio>
+<button id="botonMusica" onclick="reproducirMusica()">
+    <img id="iconoMusica" src="Images/Play.png" alt="Reproducir">
+</button>
+
+<script>
+    function reproducirMusica() { 
+        const musica = document.getElementById("musica");
+        const icono = document.getElementById("iconoMusica");
+
+        if (musica.paused) {
+            musica.play();
+            icono.src = "Images/Pausa.png";
+         } else {
+            musica.pause();
+            icono.src = "Images/Play.png";
+          }
+    }
+</script>
+    
+<br><br><br><br>
+    
+
+
+
+
+
+
+</div>
+
+</body>
+</html>

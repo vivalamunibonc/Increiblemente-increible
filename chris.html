@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="style/cuentas.css"
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chris</title>
+</head>
+<body>
+    
+<h1>Christopher</h1>
+
+<img src="Images/chris.jpeg">
+
+<p>Nombre: Christopher Ricardo Carranza Candelaria</p>
+<p>Sexo: Masculino</p>
+<p>Es bueno ejecutando su instrumento (trompeta)</p>
+<p>Fecha de nacimiento: 5/08/2010</p>
+<p>Estado: Soltero</p>
+<p>Chris o también conocido como Chris Trumpet o chele05, es una persona divertida, que toca trompeta, le gusta jugar Volleyball, y puede manejar carro estándar (probally 1%).</p>
+
+<img src="Images/esqueleto-bailando-esqueleto.gif">
+
+<br><br>
+
+
+
+<div class="botones">
+
+<button onclick="window.location.href='perfiles.html'">Volver</button>
+
+
+<! Boton de la musica -->
+
+<audio id="musica" src="Audio/chrismusica.mp3"></audio>
+<button id="botonMusica" onclick="reproducirMusica()">
+    <img id="iconoMusica" src="Images/Play.png" alt="Reproducir">
+</button>
+
+<script>
+    function reproducirMusica() { 
+        const musica = document.getElementById("musica");
+        const icono = document.getElementById("iconoMusica");
+
+        if (musica.paused) {
+            musica.play();
+            icono.src = "Images/Pausa.png";
+         } else {
+            musica.pause();
+            icono.src = "Images/Play.png";
+          }
+    }
+</script>
+    
+<br><br><br><br>
+    
+
+
+
+
+
+
+</div>
+
+</body>
+</html>

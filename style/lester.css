@@ -1,0 +1,68 @@
+img{
+width: 200px !important;
+    height: 200px !important;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+body{
+
+    background-color: #1a1a1a;
+    color: white;
+
+}
+
+h1{
+
+    color: #87ceeb;
+    text-shadow: 0 1px 20px #87ceeb;
+}
+
+button{
+cursor:pointer;
+    background-color: #001b96;
+    color: rgb(255, 255, 255);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 8px 12px rgba(0, 123, 255, 0.15);
+  transition: all 0.2s ease-in-out;
+    border-radius: 5px;
+    font-size: 30px;
+  font-weight: 500;
+}
+
+#botonMusica2 {
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+     box-shadow: none;
+    cursor: pointer;
+    }
+
+#iconoMusica2 { 
+    display: block;
+    width: 200px;
+}
+
+#botonMusica img {
+    width: 43px !important;
+    height: 43px !important;
+    }
+
+    #botonMusica {
+    
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+     box-shadow: none;
+    cursor: pointer;
+    }
+
+.botones {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.play img {
+    width: 60px;
+}

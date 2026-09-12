@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="style/cuentas.css"
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diego M</title>
+</head>
+<body>
+    
+<h1>Diego M</h1>
+
+<img src="Images/diego.jpeg">
+
+<p>Nombre: Diego Alejandro Maldonado López</p>
+<p>Sexo: Aveces</p>
+<p>Es bueno ejecutando su instrumento (trombón)</p>
+<p>Fecha de nacimiento: 06/11/2009</p>
+<p>Estado: Gaseoso</p>
+<p>Diego Maldonado, también conocido como Baltazar, es un conductor profesional, hace viajes (contacto 6769-6967), es bueno tocando el trombón, los verás seguidos en los baños de donde estudia y usa lentes.</p>
+
+<img src="Images/esqueleto-bailando-esqueleto.gif">
+
+<br><br>
+
+
+
+<div class="botones">
+
+<button onclick="window.location.href='perfiles.html'">Volver</button>
+
+
+<! Boton de la musica -->
+
+<audio id="musica" src="Audio/diegommusica.mp3"></audio>
+<button id="botonMusica" onclick="reproducirMusica()">
+    <img id="iconoMusica" src="Images/Play.png" alt="Reproducir">
+</button>
+
+<script>
+    function reproducirMusica() { 
+        const musica = document.getElementById("musica");
+        const icono = document.getElementById("iconoMusica");
+
+        if (musica.paused) {
+            musica.play();
+            icono.src = "Images/Pausa.png";
+         } else {
+            musica.pause();
+            icono.src = "Images/Play.png";
+          }
+    }
+</script>
+    
+<br><br><br><br>
+    
+
+
+
+
+
+
+</div>
+
+</body>
+</html>

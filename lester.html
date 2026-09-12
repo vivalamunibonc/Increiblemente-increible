@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="style/lester.css"
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lester</title>
+</head>
+<body>
+    
+<h1>Lester</h1>
+
+
+
+<audio id="musica2" src="Audio/m-e-o-w.mp3"></audio>
+<button id="botonMusica2" onclick="reproducirMusica2()">
+    <img id="iconoMusica2" src="Images/lester.jpeg">
+</button>
+
+<script>
+    function reproducirMusica2() { 
+        const musica2 = document.getElementById("musica2");
+        const icono2 = document.getElementById("iconoMusica2");
+
+        if (musica2.paused) {
+            musica2.play();
+          
+         } else {
+            musica2.pause();
+          }
+    }
+</script>
+
+
+<p>Nombre: Lester Raúl Soriano Hurtado</p>
+<p>Sexo: Masculino</p>
+<p>Es bueno ejecutando su instrumento (trombón)</p>
+<p>Fecha de nacimiento: 05/11/2009</p>
+<p>Estado: Sólido</p>
+<p>Lester o BigLester  es alguien divertido que es muy bueno tocando el trombón,  es relativamente solidario, le gusta mucho ensayar, y siempre llega tarde al instituto.</p>
+
+<img src="Images/esqueleto-bailando-esqueleto.gif">
+
+<br><br>
+
+
+
+<div class="botones">
+
+<button onclick="window.location.href='perfiles.html'">Volver</button>
+
+
+<! Boton de la musica -->
+
+<audio id="musica" src="Audio/lestermusica.mp3"></audio>
+<button id="botonMusica" onclick="reproducirMusica()">
+    <img id="iconoMusica" src="Images/Play.png" alt="Reproducir">
+</button>
+
+<script>
+    function reproducirMusica() { 
+        const musica = document.getElementById("musica");
+        const icono = document.getElementById("iconoMusica");
+
+        if (musica.paused) {
+            musica.play();
+            icono.src = "Images/Pausa.png";
+         } else {
+            musica.pause();
+            icono.src = "Images/Play.png";
+          }
+    }
+</script>
+    
+<br><br><br><br>
+    
+
+
+
+
+
+
+</div>
+
+</body>
+</html>
